@@ -1,7 +1,9 @@
 source 'https://rubygems.org'
 
+gem 'pry'
 gem 'devise'
 gem 'bootstrap-sass', '~> 3.1.1'
+gem 'simple_form'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.4'
 
