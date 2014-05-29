@@ -1,0 +1,16 @@
+  <% if user_signed_in? %>
+    <h3>Hi <%= current_user.username %>!</h3>
+    <p>Belows are functions/gems this site involves so far: </p>
+    <ul>
+      <li>bootstrap</li>
+      <li>simple_form</li>
+      <li>devise</li>
+      <li>omniauth-facebook</li>
+    </ul>
+  <% else %>
+    <div class='AbsoluteCenter'>
+
+      <h2 class="text-center">Welcome, visitor.</h2>
+      <p class="text-center">please try to sign up or log in through facebook to check out more.</p>
+    </div>
+  <% end %>
