@@ -5,7 +5,7 @@ Devise.setup do |config|
   # random tokens. Changing this key will render invalid all existing
   # confirmation, reset password and unlock tokens in the database.
   # config.secret_key = '4e3da985ba9257229b0fe7064f1e808eea8090f09c900a8498f3a3ea098a9595c101b811baced30e98cfb7516171dc819993d174b7ac55a3389ffab97cd4cc2a'
-
+  config.secret_key = 'ddbecdbd08bd49d4717afb7d81d6763e7d4b9b4139fc9bdd9c325dbf049bb2ba6cbec7bcc956a2f4a648fc8f3005edaa4ce412afa5985aaf0400c392fdae3c32'
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class
@@ -232,7 +232,7 @@ Devise.setup do |config|
   # config.omniauth :github, 'APP_ID', 'APP_SECRET', scope: 'user,public_repo'
   config.omniauth :facebook, "1421546684777504", "cc84e95d572a99d6374428516950b2ee",
 #      {:scope => 'email, offline_access', :client_options => {:ssl => {:ca_file => '/usr/lib/ssl/certs/ca-certificates.crt'}}}
-       {:scope => 'email, offline_access'}
+       {:scope => 'email, offline_access, location'}
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or
   # change the failure app, you can configure them inside the config.warden block.
